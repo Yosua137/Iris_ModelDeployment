@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
-import pandas as np
+import pandas as pd
 
 scaler = joblib.load("preprocessor.pkl")
 model = joblib.load ("model.pkl")
@@ -28,3 +28,4 @@ def make_prediction(features):
 if __name__ == '__main__':
 
     main()
+
